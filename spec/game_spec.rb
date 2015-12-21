@@ -18,14 +18,14 @@ describe Game do
   end
 
   it 'expects to print you win if user choose rock and compute scissors' do
-    expect(game1.play_game).to eq 'You win'
+    expect(game1.play_game).to eq :win
   end
 
   it 'expects to print you lose if user choose rock and compute scissors' do
-    expect(game2.play_game).to eq 'You lose'
+    expect(game2.play_game).to eq :lose
   end
 
   it 'expects to print draw if user and compute choose the same value' do
-    expect(game3.play_game).to eq 'Draw'
+    expect(game3.play_game).to eq :draw
   end
 end
